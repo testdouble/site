@@ -1,4 +1,4 @@
-# test-double.com
+# testdouble.com
 
 This is Test Double's website, [testdouble.com](http://testdouble.com).
 
