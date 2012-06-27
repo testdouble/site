@@ -1,6 +1,6 @@
 # test-double.com
 
-This is Test Double's website, [test-double.com](http://test-double.com).
+This is Test Double's website, [testdouble.com](http://testdouble.com).
 
 You can run the app with:
 
