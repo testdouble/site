@@ -52,8 +52,7 @@ Then /^we get an e\-mail about it\.$/ do
   wait_up_to(10) { page.should have_no_content 'Greetings' }
 
   mail = ActionMailer::Base.deliveries.last
-  mail.to.should include "searls+testdouble@gmail.com"
-  mail.to.should include "toddkaufman+testdouble@gmail.com"
+  mail.to.should include "hello@testdouble.com"
   mail.subject.should == "New test double inquiry!"
   @inquiry_fields.each do |(name,value)|
     mail.body.should include value
