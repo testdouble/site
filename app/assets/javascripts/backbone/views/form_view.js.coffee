@@ -4,6 +4,8 @@ class TestDouble.Views.FormView extends Backbone.View
 
   render: ->
     @syncForm(@$('form'),@model)
+    @enableOrDisableSubmit()
+    @
 
   save: (e) ->
     e.preventDefault()
@@ -35,6 +37,7 @@ class TestDouble.Views.FormView extends Backbone.View
     attrs = {}
     attrs[$el.attr('name')] = $el.val()
     @model.set attrs
+    @enableOrDisableSubmit()
 
   printForm: ($root) =>
     s = ""
@@ -52,6 +55,10 @@ class TestDouble.Views.FormView extends Backbone.View
         s += @printForm $el
     ,@
     s
+
+  enableOrDisableSubmit: =>
+    shouldDisable = !@model.ready()
+    @$('input:submit').prop("disabled", shouldDisable).toggleClass('disabled', shouldDisable)
 
   #private
 

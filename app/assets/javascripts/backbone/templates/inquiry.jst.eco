@@ -89,7 +89,7 @@
 
       <div class="buttons">
         <input type="button" class="cancel btn" value="cancel"/>
-        <input type="submit" class="send btn primary" value="contact us"/>
+        <input type="submit" class="send btn primary disabled" value="contact us" disabled/>
       </div>
     </fieldset>
   </form>
