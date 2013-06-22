@@ -15,6 +15,10 @@ Feature: a user sends us an inquiry
     When a user contacts us wanting to talk.
     Then we get an e-mail about it.
 
+  Scenario: a user wants to talk
+    When a user contacts us wanting to pair with us.
+    Then we get an e-mail about it.
+
   Scenario: a user cancels
     When a user opens the contact form.
     But then they cancel.

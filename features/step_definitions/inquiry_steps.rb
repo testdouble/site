@@ -71,6 +71,12 @@ When /^a user contacts us wanting to talk\.$/ do
                :discussionTopic => "I'm more than happy to discuss anything at all! Yay!"
 end
 
+When /^a user contacts us wanting to pair with us\.$/ do
+  send_inquiry :category => 'pair with you',
+               :pairingType => 'open source',
+               :pairingPurpose => 'solve a hard problem'
+end
+
 When /^a user opens the contact form\.$/ do
   contact_us_button.click
 end
