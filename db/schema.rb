@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111022141422) do
+ActiveRecord::Schema.define(:version => 20130622143723) do
 
   create_table "inquiries", :force => true do |t|
     t.string   "name"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(:version => 20111022141422) do
     t.string   "contact_preference"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "pairing_type"
+    t.string   "pairing_motivation"
   end
 
 end

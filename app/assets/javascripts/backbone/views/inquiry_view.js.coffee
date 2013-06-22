@@ -4,7 +4,8 @@ class TestDouble.Views.InquiryView extends TestDouble.Views.FormView
   categories: [
     "build an application",
     "receive training",
-    "talk with you"
+    "talk with you",
+    "pair with you"
   ]
 
   events: ->

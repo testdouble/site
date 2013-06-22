@@ -74,6 +74,20 @@
         </div>
       </div>
 
+      <div class="category <%= _(@view.categories[3]).dasherize() %> clearfix">
+        I'd like to pair on some
+        <select class="medium" name="pairingType">
+          <option>for-profit</option>
+          <option>open source</option>
+        </select>
+        code in order to
+        <select class="large" name="pairingMotivation">
+          <option>learn new techniques</option>
+          <option>solve a hard problem</option>
+          <option>get to know Test Double</option>
+        </select>.
+      </div>
+
       <div class="contact-info clearfix">
         My phone number is
         <input class="small" name="phone" size="12" type="text" placeholder="123-456-7890">

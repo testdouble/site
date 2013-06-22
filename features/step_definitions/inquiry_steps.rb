@@ -74,7 +74,7 @@ end
 When /^a user contacts us wanting to pair with us\.$/ do
   send_inquiry :category => 'pair with you',
                :pairingType => 'open source',
-               :pairingPurpose => 'solve a hard problem'
+               :pairingMotivation => 'solve a hard problem'
 end
 
 When /^a user opens the contact form\.$/ do

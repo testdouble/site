@@ -8,7 +8,8 @@ describe "TestDouble.Views.InquiryView", ->
   Then -> expect(@subject.categories).toEqual [
     "build an application",
     "receive training",
-    "talk with you"]
+    "talk with you",
+    "pair with you"]
 
   context "binding stuff", ->
     Then -> expect(_.bindAll).toHaveBeenCalledWith @subject
