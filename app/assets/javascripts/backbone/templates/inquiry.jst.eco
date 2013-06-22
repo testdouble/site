@@ -77,7 +77,7 @@
       <div class="category <%= _(@view.categories[3]).dasherize() %> clearfix">
         I'd like to pair on some
         <select class="medium" name="pairingType">
-          <option>for-profit</option>
+          <option>closed source</option>
           <option>open source</option>
         </select>
         code in order to
