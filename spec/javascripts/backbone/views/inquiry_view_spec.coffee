@@ -1,6 +1,6 @@
 describe "TestDouble.Views.InquiryView", ->
   Given -> spyOn(_, "bindAll")
-  Given -> @model = jasmine.createSpyObj('model',['bind','get'])
+  Given -> @model = jasmine.createSpyObj('model',['bind','get', 'ready'])
   Given -> @subject = new TestDouble.Views.InquiryView model: @model
 
 
@@ -26,8 +26,8 @@ describe "TestDouble.Views.InquiryView", ->
       Then -> @result == @subject
 
     describe "showing the selected category's fields", ->
-      CATEGORY_NAME='foo'
-      OTHER_CATEGORY_NAME='bar'
+      CATEGORY_NAME = 'foo'
+      OTHER_CATEGORY_NAME = 'bar'
       Given -> @$container = inject('main')
       Given -> @$selectedCategory = @$container.inject("category #{CATEGORY_NAME}")
       Given -> @$otherCategory = @$container.inject("category #{OTHER_CATEGORY_NAME}")
