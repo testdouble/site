@@ -5,6 +5,8 @@ class TestDouble.Routers.SiteRouter extends Backbone.Router
     ".*": "welcome"
 
   inquiry: (category = "") ->
+    @welcome() unless @welcomeView?
+
     @inquiryView ||= new TestDouble.Views.InquiryView
       el: $('<div id="contactUs" class="modal hidden"></div>').appendTo('body')[0]
       model: new TestDouble.Models.Inquiry(category: category.replace(/\-/g,' '))
