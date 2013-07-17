@@ -29,6 +29,24 @@ body
   .content
     min-height: 1064px
 
+    .body
+      max-width: 840px
+      margin: 250px 25px 0px 150px
+      line-height: 2.5
+
+    hr
+      margin-top: 50px
+
+    .our-greeting
+      margin-right: 50px
+
+      .signature
+        +retina-image (/img/logo, 68px 61px)
+        +size (68px 61px)
+        +transform(scale(.5))
+        margin-left: 10px
+
+
 .green-strip
   height: 32px
   background: $test-double-green
@@ -52,13 +70,19 @@ body
   &:hover
     +transform (rotateY(360deg))
 
-.inquiry-form-wrap
-  max-width: 840px
-  margin: 250px 25px 0px 150px
-  line-height: 2.5
 
-  .graf
-    margin-top: 20px
+h2
+  font-size: 4em
+  font-weight: 200
+  line-height: .5
+
+
+.contact-us-wrapper
+  margin-top: 50px
+
+.inquiry-form-wrap
+  // .graf
+    // margin-top: 20px
 
   .buttons
     float: right
@@ -127,7 +151,7 @@ body
   .send.success
     color: $sea-green
 
-hr.footer
+hr
   border: 0
   height: 1px
   width: 30%
@@ -156,9 +180,10 @@ footer
       color: $ocean-blue
 
 
-
 fieldset
   border: none
+  margin: 0
+  padding: 0
 
 .hidden
   display: none

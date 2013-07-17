@@ -12,7 +12,20 @@
 
         <h1 class="logo">test double</h1>
 
-        <div class="contact-us-wrapper"></div>
+        <div class="body">
+          <h2>Hello</h2>
+          <div class="our-greeting">
+            <p>
+              We are bright. Friendly. Direct, open, and honest. We stray from constraints and embrace challenges. We love solving complex problems with simple, clean solutions to give unique experiences on the web. And fostering relationships, we love that, too. We are Test Double and we are taking a refreshing approach to developing code.
+            </p>
+            Nice to meet you.
+            <!-- <div class="signature"></div> -->
+          </div>
+
+          <hr/>
+
+          <div class="contact-us-wrapper"></div>
+        </div>
       </div>
       <hr class="footer"/>
       <footer>
