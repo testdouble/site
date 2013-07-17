@@ -1,0 +1,163 @@
+@import bourbon/bourbon
+
+$light-color: #fdfdfd
+$dark-color: #231F20
+$grey: #c1c1c1
+
+$test-double-green: #6eff00
+$ocean-blue: #006699
+$sea-green: #009C82
+
+$radius: 4px
+
+body
+  font-family: 'Source Sans Pro', sans-serif
+  color: $dark-color
+  background: lighten($grey, 5%)
+  font-weight: 200
+
+.page
+  position: relative
+  width: 80%
+  margin: 0 auto
+  margin-top: 30px
+  background: $light-color
+  max-width: 1064px
+  -webkit-box-shadow: 6px 10px 6px 2px #999
+  box-shadow: 6px 10px 6px 2px #999
+
+  .content
+    min-height: 1064px
+
+.green-strip
+  height: 32px
+  background: $test-double-green
+
+.logo
+  position: absolute
+  top: 100px
+  left: 50px
+
+  margin: 0
+  padding: 0
+  display: block
+  float: left
+  color: $dark-color
+  text-indent: -9999px
+  +retina-image (/img/logo, 68px 61px)
+  +size (68px 61px)
+  +animation (appear 1s)
+  +transition (all .5s)
+
+  &:hover
+    +transform (rotateY(360deg))
+
+.inquiry-form-wrap
+  max-width: 840px
+  margin: 250px 25px 0px 150px
+  line-height: 2.5
+
+  .graf
+    margin-top: 20px
+
+  .buttons
+    float: right
+
+  input[type=text]
+    font-weight: 200
+    background: none
+    border: none
+    border-bottom: 1px dashed $dark-color
+
+  input[type=text], select
+    &:focus
+      border: none
+      border-bottom: 1px dashed $sea-green
+      outline: none
+
+  input[type=text], select, textarea
+    &:focus
+      outline: none
+
+      &::-webkit-input-placeholder
+        opacity: 0
+
+      &:-moz-placeholder
+        opacity: 0
+
+  textarea
+    width: 90%
+    font-weight: 200
+    border: 1px solid rgba(120,120,120,.2)
+
+  select
+    background: none
+    font-weight: 200
+    padding: 2px 18px 2px 5px
+    border-radius: 0px
+    border: none
+    border-bottom: 1px dashed $grey
+
+    background-image: url("/img/arrow.png")
+    background-repeat: no-repeat
+    background-position: right center
+
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+  .buttons
+    margin-top: 30px
+    margin-right: 50px
+
+  .send
+    font-family: 'Pacifico'
+    font-size: 2em
+    border: none
+    background: none
+
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+  .send:not([disabled])
+    color: $sea-green
+
+  .send.success
+    color: $sea-green
+
+hr.footer
+  border: 0
+  height: 1px
+  width: 30%
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0))
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0))
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0))
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0))
+
+
+footer
+  text-align: center
+  margin: 20px 0px 40px 0px
+  padding-bottom: 20px
+
+  .links
+    font-size: 1.4em
+
+  .copyright
+    font-size: .8em
+
+  a
+    color: $sea-green
+    text-decoration: none
+
+    &:hover
+      color: $ocean-blue
+
+
+
+fieldset
+  border: none
+
+.hidden
+  display: none

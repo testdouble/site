@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test double | nice code</title>
+
+    <link rel="stylesheet" type="text/css" href="css/app.css" media="all" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="content">
+        <div class="green-strip"></div>
+
+        <h1 class="logo">test double</h1>
+
+        <div class="contact-us-wrapper"></div>
+      </div>
+      <hr class="footer"/>
+      <footer>
+        <p class="links">
+          <a href="http://blog.testdouble.com">blog</a> &bullet;
+          <a href="http://twitter.com/testdouble">twitter</a> &bullet;
+          <a href="http://github.com/testdouble">github</a>
+        </p>
+        <p class="copyright">
+          &copy; test double, <%= new Date().getFullYear() %>
+        </p>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32958269-1']);
+      _gaq.push(['_setDomainName', 'testdouble.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
