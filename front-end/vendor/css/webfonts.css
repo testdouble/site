@@ -7,6 +7,12 @@
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Book'), local('SourceSansPro-Book'), url(../webfonts/source_sans_pro_300.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
   font-weight: 400;
   src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(../webfonts/source_sans_pro_400.woff) format('woff');
 }
