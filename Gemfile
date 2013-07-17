@@ -30,15 +30,9 @@ group :development, :test do
   gem 'capybara-webkit'
   gem 'akephalos2', :require => 'akephalos'
 
-  gem 'jasmine-headless-webkit'
-
   gem 'guard-rails-assets'
   gem 'guard-rspec'
   gem 'guard-cucumber'
-  gem 'guard-jasmine-headless-webkit'
-
-  gem 'growl'
-  gem 'rb-fsevent'
 end
 
 
