@@ -23,7 +23,7 @@
         </select>
       </div>
 
-      <a name="inquiry/build-an-application">
+      <a name="inquiry/build-an-application"/>
       <div class="category <%= _(this.categories[0]).dasherize() %>">
         It's a
         <select class="small" name="applicationType">
@@ -48,7 +48,7 @@
         </select>
       </div>
 
-      <a name="inquiry/receive-training">
+      <a name="inquiry/receive-training"/>
       <div class="category <%= _(this.categories[1]).dasherize() %>">
         I'm interested in a
         <select class="small" name="trainingFormat">
@@ -65,7 +65,7 @@
         </select>
       </div>
 
-      <a name="inquiry/talk-with-you">
+      <a name="inquiry/talk-with-you"/>
       <div class="category <%= _(this.categories[2]).dasherize() %>">
         I'd like to discuss
         <br/>
@@ -74,7 +74,7 @@
         </div>
       </div>
 
-      <a name="inquiry/pair-with-you">
+      <a name="inquiry/pair-with-you"/>
       <div class="category <%= _(this.categories[3]).dasherize() %>">
         I'd like to pair on some
         <select class="medium" name="pairingType">
