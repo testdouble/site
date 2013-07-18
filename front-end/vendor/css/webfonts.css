@@ -20,6 +20,8 @@
   font-style: normal;
 }
 
+/* Not in use yet */
+/*
 @font-face {
   font-family: 'Source Sans Pro';
   src: url('../webfonts/sourcesanspro-regular-webfont.eot');
@@ -30,6 +32,7 @@
   font-weight: 400;
   font-style: normal;
 }
+*/
 
 @font-face {
   font-family: 'Pacifico';
