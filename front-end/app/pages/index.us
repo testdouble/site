@@ -13,18 +13,20 @@
         <h1 class="logo">test double</h1>
 
         <div class="body">
-          <!-- <h2>Hello</h2>
           <div class="our-greeting">
+            <h2>Solving problems others can't.</h2>
             <p>
-              We are bright. Friendly. Direct, open, and honest. We stray from constraints and embrace challenges. We love solving complex problems with simple, clean solutions to give unique experiences on the web. And fostering relationships, we love that, too. We are Test Double and we are taking a refreshing approach to developing code.
+              We are bright. Friendly. Direct, open, and honest. We stray from constraints and embrace challenges. We love solving complex problems with simple, clean solutions to give unique experiences on the web. And fostering relationships, we love that, too. We are Test Double and we are taking a refreshing approach to writing code.
             </p>
-            Nice to meet you.
-            <div class="signature"></div>
+            <span class="sign-off">Nice to meet you.</span>
+            <!-- <div class="signature"></div> -->
           </div>
 
-          <hr/> -->
-
-          <div class="contact-us-wrapper"></div>
+          <hr class="voice-switch"/>
+          <div class="your-greeting">
+            <h2 class="small">Share your story.</h2>
+            <div class="contact-us-wrapper"></div>
+          </div>
         </div>
       </div>
       <hr class="footer"/>

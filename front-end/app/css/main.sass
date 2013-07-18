@@ -16,6 +16,7 @@ body
   background: lighten($grey, 5%)
   font-weight: 300
   -webkit-font-smoothing: antialiased
+  font-size: 18px
 
 .page
   position: relative
@@ -31,22 +32,30 @@ body
     min-height: 1064px
 
     .body
-      max-width: 840px
       margin: 250px 25px 0px 150px
       line-height: 2.5
-
-    hr
-      margin-top: 50px
 
     .our-greeting
       margin-right: 50px
 
-      .signature
-        +retina-image (/img/logo, 68px 61px)
-        +size (68px 61px)
-        +transform(scale(.5))
-        margin-left: 10px
+      .sign-off
+        font-family: 'Pacifico'
+        font-size: 1.2em
+        color: #444
 
+      // .signature
+      //   +retina-image (/img/logo, 68px 61px)
+      //   +size (68px 61px)
+      //   +transform(scale(.5))
+      //   margin-left: 10px
+
+    hr.voice-switch
+      margin: 50px -25px 0px -150px //left & right are inverse of .body margin
+      border: 0
+      border-bottom: 1px dashed #ccc
+
+    .your-greeting
+      margin-top: 75px
 
 .green-strip
   height: 32px
@@ -73,10 +82,12 @@ body
 
 
 h2
-  font-size: 4em
+  font-size: 3em
   font-weight: 200
   line-height: .5
 
+  &.small
+    font-size: 2.6em
 
 .contact-us-wrapper
   margin-top: 50px
@@ -84,6 +95,8 @@ h2
 .inquiry-form-wrap
   // .graf
     // margin-top: 20px
+
+  font-size: .9em
 
   .buttons
     float: right
@@ -152,7 +165,7 @@ h2
   .send.success
     color: $sea-green
 
-hr
+hr.footer
   border: 0
   height: 1px
   width: 30%
