@@ -37,8 +37,8 @@ class TestDouble.Views.InquiryView extends TestDouble.Views.FormView
 
   #private
 
-  showSelectedCategory: ->
+  showSelectedCategory: (user_event = null) ->
     selectedClass = @$(':input[name="category"] :selected').attr('class')
-    window.router.navigate('inquiry/' + selectedClass)
+    window.router.navigate("inquiry/#{selectedClass}") if user_event?
     @$('.category').each (i,el) -> $(el).toggleClass('hidden',!$(el).hasClass(selectedClass))
 
