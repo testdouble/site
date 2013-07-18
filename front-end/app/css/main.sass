@@ -78,6 +78,7 @@ body
 h2
   font-size: 3em
   font-weight: 200
+  line-height: 1
 
   &.small
     font-size: 2.6em
@@ -97,6 +98,7 @@ h2
     font-weight: 300
     background: none
     border: none
+    border-radius: 0
     border-bottom: 1px dashed $dark-color
 
     &.small
@@ -128,6 +130,7 @@ h2
     width: 90%
     font-weight: 300
     border: 1px solid rgba(120,120,120,.2)
+    border-radius: 0
 
   select
     cursor: pointer
@@ -151,7 +154,7 @@ h2
 
 
   .buttons
-    margin-top: 30px
+    margin-top: 15px
     margin-right: 50px
 
   .send
@@ -209,5 +212,12 @@ fieldset
   display: none
 
 @media (max-device-width: 768px)
+  .page
+    width: 90%
+
+  .introduction, .category, .contact-info
+    margin-top: 20px
+
+@media (max-width: 768px)
   .page
     width: 90%
