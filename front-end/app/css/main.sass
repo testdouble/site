@@ -94,10 +94,20 @@ h2
     float: right
 
   input[type=text]
+    margin: 0px 3px 0px 3px
     font-weight: 300
     background: none
     border: none
     border-bottom: 1px dashed $dark-color
+
+    &.small
+      width: 100px
+
+    &.medium
+      width: 160px
+
+    &.large
+      width: 250px
 
   input[type=text], select
     &:focus
